@@ -44,6 +44,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				27A66D930FDDD95A009449AE /* AppDelegate.h */,
+				27A66D940FDDD95A009449AE /* AppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -101,8 +103,6 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
-				27A66D930FDDD95A009449AE /* AppDelegate.h */,
-				27A66D940FDDD95A009449AE /* AppDelegate.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
