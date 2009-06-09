@@ -23,6 +23,18 @@
     [task launch];
 }
 
+- (void) bringToForeground
+{
+    NSDictionary* errorDict;
+    NSAppleEventDescriptor* returnDescriptor = NULL;
+
+    NSAppleScript* scriptObject = [[NSAppleScript alloc] initWithSource:
+        @"tell application \"X11\" to activate"];
+
+    returnDescriptor = [scriptObject executeAndReturnError: &errorDict];
+    [scriptObject release];
+}
+
 - (void)application:(NSApplication *)sender openFiles:(NSArray *)filenames
 {
     //NSString *script = @"($( ps -awx | grep -F 'bin/X' | awk '{print $(NF-2)}' | grep -e \":[0-9]\"  )); if [[ -n $disp_no ]];then DISPLAY=${disp_no}.0; else DISPLAY=:0.0; fi;env DISPLAY=$DISPLAY /opt/local/gentoo/usr/bin/vim --remote ";
@@ -34,6 +46,7 @@
                                                   vim, nil];
 
     [self runScript:array];
+    [self bringToForeground];
 }
 
 @end
