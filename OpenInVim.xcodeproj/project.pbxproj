@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		2708D07C0FDED69500E45182 /* MacVim.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2708D07B0FDED69500E45182 /* MacVim.icns */; };
+		2708D50B0FE0791C00E45182 /* GetPID.c in Sources */ = {isa = PBXBuildFile; fileRef = 2708D5040FE0791C00E45182 /* GetPID.c */; };
+		2708D50F0FE0791C00E45182 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2708D50A0FE0791C00E45182 /* Readme.txt */; };
 		27A66D950FDDD95A009449AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A66D940FDDD95A009449AE /* AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -21,6 +23,9 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2708D07B0FDED69500E45182 /* MacVim.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MacVim.icns; sourceTree = "<group>"; };
+		2708D5040FE0791C00E45182 /* GetPID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetPID.c; sourceTree = "<group>"; };
+		2708D5050FE0791C00E45182 /* GetPID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPID.h; sourceTree = "<group>"; };
+		2708D50A0FE0791C00E45182 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		27A66D930FDDD95A009449AE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27A66D940FDDD95A009449AE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +83,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2708D5030FE0791C00E45182 /* PIDFromBSDProcessName */ = {
+			isa = PBXGroup;
+			children = (
+				2708D5040FE0791C00E45182 /* GetPID.c */,
+				2708D5050FE0791C00E45182 /* GetPID.h */,
+				2708D50A0FE0791C00E45182 /* Readme.txt */,
+			);
+			path = PIDFromBSDProcessName;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* OpenInVim */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +108,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2708D5030FE0791C00E45182 /* PIDFromBSDProcessName */,
 				32CA4F630368D1EE00C91783 /* OpenInVim_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -165,6 +181,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				2708D07C0FDED69500E45182 /* MacVim.icns in Resources */,
+				2708D50F0FE0791C00E45182 /* Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +194,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				27A66D950FDDD95A009449AE /* AppDelegate.m in Sources */,
+				2708D50B0FE0791C00E45182 /* GetPID.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
