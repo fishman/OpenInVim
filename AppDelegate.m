@@ -81,6 +81,7 @@
 
     [self runScript:array];
     [self bringToForeground];
+    [NSApp terminate:nil];
 }
 
 @end
